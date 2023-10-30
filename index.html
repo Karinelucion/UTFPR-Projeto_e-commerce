@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
+    <meta name="viewport" content="width=device-width], initial-scale=1.0">
     <title>Flor de Cerejeira</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -15,213 +15,344 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid justify-content-between d-flex">
+    <header class="fixed-top">
+        <nav class="navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid d-flex justify-content-between">
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
                     data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                        <img src="img/Logo.png" alt="Trabalho2 Logo" loading="lazy" />
-                    </a>
-                    <form class="d-flex">
-                        <input class="new-form-control rounded-end-0" type="pesquisar" placeholder="Pesquisar"
+                    <div class="">
+                        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                            <img src="img/Logo.png" alt="Trabalho2 Logo" loading="lazy" />
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex w-100">
+                        <input class="new-form-control rounded-end-0 " type="pesquisar" placeholder="Pesquisar"
                             aria-label="pesquisar">
-                        <button class="rounded-end none-border bg-dark-pink w-3r" type="submit"><i data-feather="search"
+                        <button class="rounded-end none-border bg-medium-pink w-3r" type="submit"><i data-feather="search"
                                 class="text-white"></i></button>
                     </form>
                 </div>
-                <div class="d-flex align-items-center">
-                    <a>Entrar</a>
-                    <div class="dropdown">
-                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
-                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="img/avatar.jpg" class="rounded-circle" height="50"
-                                alt="Avatar" loading="lazy" />
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
-                            <li>
-                                <a class="dropdown-item" href="#">My profile</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Settings</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Logout</a>
-                            </li>
-                        </ul>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="color-darkpink text-decoration-none entrar-hover">Entrar</a>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle d-flex align-items-center hidden-arrow mx-3" href="#"
+                                id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="img/avatar.jpg" class="rounded-circle border" height="50" alt="Avatar"
+                                    loading="lazy" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                                <li>
+                                    <a class="dropdown-item" href="#">My profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <a class="text-reset me-3 dropdown-toggle hidden-arrow " href="#" id="navbarDropdownMenuLink"
-                        role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                        <i data-feather="shopping-bag" class="color-darkpink"></i>
-                        <span class="badge rounded-pill badge-notification bg-soft-pink">1</span>
-                    </a>
+                    <div class="dropdown">
+                        <a class="text-reset me-3 dropdown-toggle hidden-arrow " href="#" id="navbarDropdownMenuLink"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i data-feather="shopping-bag" class="color-darkpink"></i>
+                            <span class="badge rounded-pill badge-notification bg-soft-pink">1</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
-        <div>
-            
+        <div class="bg-medium-pink">
+            <ul class="list-unstyled d-flex justify-content-evenly text-white links-hover-white">
+                <li>
+                    <a href="#" class="category" id="acessorios" role="button" data-bs-toggle="dropdown" aria-expanded="false">ACESSÓRIOS</a>
+                    <ul class="dropdown-menu" aria-labelledby="acessorios">
+                        <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 3</a></li>
+                      </ul>
+                </li>
+                <li>
+                    <a href="#" class="category" id="labios" role="button" data-bs-toggle="dropdown" aria-expanded="false">LÁBIOS</a>
+                    <ul class="dropdown-menu" aria-labelledby="labios">
+                        <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 3</a></li>
+                      </ul>
+                </li>
+                <li>
+                    <a href="#" class="category" id="rosto" role="button" data-bs-toggle="dropdown" aria-expanded="false">ROSTO</a>
+                    <ul class="dropdown-menu" aria-labelledby="rosto">
+                        <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 3</a></li>
+                      </ul>
+                </li>
+                <li>
+                    <a href="#" class="category" id="olhos" role="button" data-bs-toggle="dropdown" aria-expanded="false">OLHOS</a>
+                    <ul class="dropdown-menu" aria-labelledby="olhos">
+                        <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 3</a></li>
+                      </ul>
+                </li>
+                <li>
+                    <a href="#" class="category" id="skincare" role="button" data-bs-toggle="dropdown" aria-expanded="false">SKNCARE</a>
+                    <ul class="dropdown-menu" aria-labelledby="skincare">
+                        <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 3</a></li>
+                      </ul>
+                </li>
+                <li>
+                    <a href="#" class="category" id="kits" role="button" data-bs-toggle="dropdown" aria-expanded="false">KITS</a>
+                    <ul class="dropdown-menu" aria-labelledby="kits">
+                        <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opção 3</a></li>
+                      </ul>
+                </li>
+            </ul>
         </div>
 
     </header>
-    <main>
-        <div class=" gap-3">
-            <div class="card col-md-3 " >
-                <img src="img/image 2.png" class="card-img-top " alt="Produto1" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+    <main class="container">
+        <div class="row mb-4 gap-3 links-hover-pink">
+            <div class="card col-12 col-md-6 col-lg-2 align-items-center">
+                <img src="img/img1.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto2" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img2.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto3" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img3.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto4" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img4.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto5" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img5.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto6" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img6.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto7" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img7.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto8" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img8.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto9" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img9.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto10" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img10.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto11" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="produto.html" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img1.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
-            <div class="card col-md-3">
-                <img src="" class="card-img-top" alt="Produto12" />
-                <div class="card-body">
-                    <h5 class="card-title">Paleta de sombra MAC</h5>
-                    <h4>R$82,00</h4>
-                    <p class="card-text">A prazo em até 3xR$20,50</p>
-                    <a href="#!" class="">COMPRAR</a>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img2.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
                 </div>
             </div>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img3.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img4.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img5.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img6.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img7.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img8.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img9.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-6 col-lg-2 position-relative align-items-center">
+                <img src="img/img10.avif" class="card-img-top w-75 align-items-center" alt="Produto1" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fs-6">Paleta de sombra MAC</h5>
+                    <h4 class="color-darkpink fs-5">R$82,00</h4>
+                    <p class="card-text fs-12 mb-4">A prazo em até 3xR$20,50</p>
+                    <a href="produto.html" class="btn-comprar">COMPRAR</a>
+                </div>
+            </div>
+
         </div>
     </main>
-    <footer class="bg-dark-pink">
-        <div class=" d-flex pt-3">
+    <footer class="bg-medium-pink bottom">
+        <div class=" d-flex pt-3 links-hover-white">
             <div class="col-md-2 ps-3">
                 <h1 class="footer-title">Sobre nós</h1>
                 <ul class="footer-text">
-                    <li><a>Lorem ipsum</a></li>
-                    <li><a>Lorem ipsum</a></li>
-                    <li><a>Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <h1 class="footer-title">Sobre nós</h1>
                 <ul class="footer-text">
-                    <li><a>Lorem ipsum</a></li>
-                    <li><a>Lorem ipsum</a></li>
-                    <li><a>Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <h1 class="footer-title">Sobre nós</h1>
                 <ul class="footer-text">
-                    <li><a>Lorem ipsum</a></li>
-                    <li><a>Lorem ipsum</a></li>
-                    <li><a>Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <h1 class="footer-title">Sobre nós</h1>
                 <ul class="footer-text">
-                    <li><a>Lorem ipsum</a></li>
-                    <li><a>Lorem ipsum</a></li>
-                    <li><a>Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
                 <h1 class="footer-title text-center">Nos acompanhe</h1>
                 <div class="text-center">
-                    <a class="mx-1"><img src="img/Instagram.jfif" alt="Instagram" class="rounded-circle" height="50"></a>
-                    <a class="mx-1"><img src="img/Facebook.png" alt="Facebook" class="rounded-circle" height="50"></a>
-                    <a class="mx-1"><img src="img/Twitter.png" alt="Twitter" class="rounded-circle" height="50"></a>
+                    <a href="#" class="mx-1"><img src="img/Instagram.jfif" alt="Instagram" class="rounded-circle"
+                            height="50"></a>
+                    <a href="#" class="mx-1"><img src="img/Facebook.png" alt="Facebook" class="rounded-circle"
+                            height="50"></a>
+                    <a href="#" class="mx-1"><img src="img/Twitter.png" alt="Twitter" class="rounded-circle"
+                            height="50"></a>
                 </div>
             </div>
         </div>
@@ -229,7 +360,8 @@
             <hr class="text-white">
         </div>
         <div class="p-1">
-            <p class="footer-text">© 2023 Flor de Cerejeira. Todos os direitos reservados. Este é um protótipo e não representa
+            <p class="text-white fs-12 text-center">© 2023 Flor de Cerejeira. Todos os direitos reservados. Este é um protótipo e não
+                representa
                 necessariamente a versão final do produto. Qualquer semelhança com marcas registradas ou produtos reais
                 é puramente coincidência. Desenvolvido por Karine Lucion.</p>
         </div>
