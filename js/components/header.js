@@ -1,6 +1,6 @@
 export const headerComponent = 
 `<header class="fixed-top">
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<nav class="navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid d-flex justify-content-between">
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
             data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -23,8 +23,8 @@ export const headerComponent =
             </form>
         </div>
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-            <div class="d-flex align-items-center ">
-                <a class="color-darkpink text-decoration-none">Entrar</a>
+            <div class="d-flex align-items-center">
+                <a href="#" class="color-darkpink text-decoration-none entrar-hover">Entrar</a>
                 <div class="dropdown">
                     <a class="dropdown-toggle d-flex align-items-center hidden-arrow mx-3" href="#"
                         id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
@@ -56,15 +56,56 @@ export const headerComponent =
     </div>
 </nav>
 <div class="bg-medium-pink">
-    <ul class="list-unstyled d-flex justify-content-evenly text-white ">
-        <li><a href="#" class="category">ACESSÓRIOS</a></li>
-        <li><a href="#" class="category">LÁBIOS</a></li>
-        <li><a href="#" class="category">ROSTO</a></li>
-        <li><a href="#" class="category">OLHOS</a></li>
-        <li><a href="#" class="category">SKINCARE</a></li>
-        <li><a href="#" class="category">KITS</a></li>
+    <ul class="list-unstyled d-flex justify-content-evenly text-white links-hover-white">
+        <li>
+            <a href="#" class="category" id="acessorios" role="button" data-bs-toggle="dropdown" aria-expanded="false">ACESSÓRIOS</a>
+            <ul class="dropdown-menu" aria-labelledby="acessorios">
+                <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                <li><a class="dropdown-item" href="#">Opção 3</a></li>
+              </ul>
+        </li>
+        <li>
+            <a href="#" class="category" id="labios" role="button" data-bs-toggle="dropdown" aria-expanded="false">LÁBIOS</a>
+            <ul class="dropdown-menu" aria-labelledby="labios">
+                <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                <li><a class="dropdown-item" href="#">Opção 3</a></li>
+              </ul>
+        </li>
+        <li>
+            <a href="#" class="category" id="rosto" role="button" data-bs-toggle="dropdown" aria-expanded="false">ROSTO</a>
+            <ul class="dropdown-menu" aria-labelledby="rosto">
+                <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                <li><a class="dropdown-item" href="#">Opção 3</a></li>
+              </ul>
+        </li>
+        <li>
+            <a href="#" class="category" id="olhos" role="button" data-bs-toggle="dropdown" aria-expanded="false">OLHOS</a>
+            <ul class="dropdown-menu" aria-labelledby="olhos">
+                <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                <li><a class="dropdown-item" href="#">Opção 3</a></li>
+              </ul>
+        </li>
+        <li>
+            <a href="#" class="category" id="skincare" role="button" data-bs-toggle="dropdown" aria-expanded="false">SKNCARE</a>
+            <ul class="dropdown-menu" aria-labelledby="skincare">
+                <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                <li><a class="dropdown-item" href="#">Opção 3</a></li>
+              </ul>
+        </li>
+        <li>
+            <a href="#" class="category" id="kits" role="button" data-bs-toggle="dropdown" aria-expanded="false">KITS</a>
+            <ul class="dropdown-menu" aria-labelledby="kits">
+                <li><a class="dropdown-item" href="#">Opção 1</a></li>
+                <li><a class="dropdown-item" href="#">Opção 2</a></li>
+                <li><a class="dropdown-item" href="#">Opção 3</a></li>
+              </ul>
+        </li>
     </ul>
 </div>
 
-</header>
-`
+</header>`

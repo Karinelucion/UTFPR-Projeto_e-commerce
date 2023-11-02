@@ -18,7 +18,6 @@
 main {
     position: relative;
     margin-top: 7rem;
-    margin-bottom: 2rem;
   }
 
 .color-darkpink {
@@ -189,4 +188,8 @@ main {
 
 .img-hover:hover{
   box-shadow:  0 0 3px var(--light-pink), 0 0 5px var(--medium-grey);
+}
+
+.vh-100{
+  height: 100vh;
 }
